@@ -3,7 +3,16 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    posts() {
+      return this.$store.state
+    },
+  },
+  mounted: () => {
+    console.log('posts', this.$store)
+  },
+}
 </script>
 
 <style>

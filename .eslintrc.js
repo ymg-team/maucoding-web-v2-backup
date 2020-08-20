@@ -15,6 +15,6 @@ module.exports = {
     'plugin:nuxt/recommended',
   ],
   plugins: ['prettier'],
-  // add your custom rules here
+  // add your custom rules hereshor
   rules: {},
 }
