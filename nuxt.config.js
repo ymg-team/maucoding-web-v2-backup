@@ -25,11 +25,22 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700&display=swap',
+      },
+    ],
+    link: [{ rel: 'manifest', href: '/manifest.json' }],
   },
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/vendor/gridlex/gridlex.min.css',
+    '@/assets/styles/global.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -53,6 +64,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
   ],
   /*
    ** Axios module configuration
