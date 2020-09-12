@@ -1,4 +1,9 @@
-# yussanacademy-web-v2
+# Mau Coding
+
+## Host
+
+- Dev : https://maucoding.herokuapp.com/
+- Prod : https://maucoding.com
 
 ## Build Setup
 
