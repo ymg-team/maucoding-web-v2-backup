@@ -80,7 +80,7 @@ export default {
    ** Server configuration
    */
   server: {
-    port: 20202,
+    port: process.env.PORT || 20202,
     host: '0.0.0.0',
   },
 }
