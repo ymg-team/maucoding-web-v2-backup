@@ -1,12 +1,9 @@
 <template>
   <header class="header">
-    <div class="grid">
+    <div class="grid-noGutter">
       <div class="col-3 header__header-logo">
         <nuxt-link to="/">
-          <img
-            src="/images/logos/android-icon-96x96.png"
-            alt="Mau Coding Logo"
-          />
+          <img src="/images/logos/MCDG logo.svg" alt="Mau Coding Logo" />
         </nuxt-link>
       </div>
       <div class="col-9 header__header-links">
@@ -33,7 +30,7 @@
 
 <style scoped lang="scss">
 header.header {
-  padding: 10px;
+  padding-top: 25px;
   .header__header-logo {
     img {
       height: 77px;
@@ -66,7 +63,6 @@ header.header {
           position: absolute;
           width: 30px;
           height: 30px;
-          top: 35px;
         }
       }
     }

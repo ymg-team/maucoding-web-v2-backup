@@ -1,0 +1,78 @@
+<template>
+  <div class="large-post-card">
+    <div
+      class="large-post-card__cover"
+      :style="{ backgroundImage: `url(${data.cover})` }"
+    ></div>
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.intro }}</p>
+    <div class="author">
+      <a href="/">Yussan</a>
+      <br />
+      <span class="author__created-on">5 Agustus 2020</span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    data: {
+      type: Object,
+      default: () => {
+        return {
+          cover: '/images/dummies/post-cover.png',
+          title: 'Membuat Dashboard Dengan Python Dash',
+          intro: `Pada tutorial kali ini, kita akan membahas salah satu framework 
+                  python yang sangat membantu dalam membangun sebuah dashboard`,
+          author: {
+            username: 'yussan',
+          },
+          created_on: 1600572991,
+        }
+      },
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+.large-post-card {
+  .large-post-card__cover {
+    background-size: cover;
+    background-position: center;
+    height: 139px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .author {
+    line-height: 1;
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: none;
+    }
+    .author__created-on {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #777777;
+    }
+  }
+}
+</style>
