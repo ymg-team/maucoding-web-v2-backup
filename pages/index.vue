@@ -10,8 +10,6 @@
       <TitleHeader title="Latest Posts" />
       <Spacer height="35" />
       <LatestPosts />
-      <Spacer height="50" />
-      ...
       <Spacer height="102.61" />
       <TitleHeader title="Latest Videos" />
       <Spacer height="30" />
@@ -40,6 +38,9 @@ import PopularHashtags from '@/components/lists/PopularHastags.vue'
 import Footer from '@/components/navigations/Footer.vue'
 
 export default {
+  data() {
+    return {}
+  },
   components: {
     Header,
     PopularPosts,
