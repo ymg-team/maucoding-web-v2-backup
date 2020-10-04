@@ -1,7 +1,11 @@
 <template>
   <div class="latest-post-box">
     <div class="grid">
-      <vue-glide :bullet="true">
+      <vue-glide
+        :bullet="true"
+        :peek="{ before: -100, after: 100 }"
+        type="carousel"
+      >
         <vue-glide-slide v-for="i in 10" :key="i">
           <div class="col-4">
             <LargeCardPost />

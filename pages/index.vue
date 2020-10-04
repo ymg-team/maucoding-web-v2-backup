@@ -2,17 +2,17 @@
   <div>
     <div class="container">
       <Header />
-      <Spacer height="58" />
+      <Spacer :height="58" />
       <PopularPosts />
-      <Spacer height="50" />
+      <Spacer :height="50" />
       <BtnMoreFull />
-      <Spacer height="50" />
+      <Spacer :height="50" />
       <TitleHeader title="Latest Posts" />
-      <Spacer height="35" />
+      <Spacer :height="35" />
       <LatestPosts />
-      <Spacer height="102.61" />
+      <Spacer :height="102.61" />
       <TitleHeader title="Latest Videos" />
-      <Spacer height="30" />
+      <Spacer :height="30" />
       <div class="grid">
         <div class="col-9">
           <LatestVideos />
@@ -38,9 +38,6 @@ import PopularHashtags from '@/components/lists/PopularHastags.vue'
 import Footer from '@/components/navigations/Footer.vue'
 
 export default {
-  data() {
-    return {}
-  },
   components: {
     Header,
     PopularPosts,
@@ -52,13 +49,13 @@ export default {
     PopularHashtags,
     Footer,
   },
+  data() {
+    return {}
+  },
   computed: {
     posts() {
       return this.$store.state
     },
-  },
-  mounted() {
-    console.log('posts', this.$store.state)
   },
   head() {
     return {

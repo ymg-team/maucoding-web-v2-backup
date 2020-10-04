@@ -7,7 +7,7 @@
 <style scoped lang="scss">
 .btn-more-full {
   text-align: right;
-  border-bottom: 1px solid #b6b6b6;
+  border-bottom: 1px solid #a537fd;
   padding-bottom: 30px;
   width: 1021px;
   margin: 0 auto;
