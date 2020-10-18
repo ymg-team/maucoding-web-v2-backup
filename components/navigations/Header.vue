@@ -25,7 +25,7 @@
             <li>
               <nuxt-link to="/about">ABOUT</nuxt-link>
             </li>
-            <li class="header__header-links__search-icon">
+            <li style="width: 70px;" class="header__header-links__search-icon">
               <a href="#">
                 <img src="/images/icons/magnify 2.png" alt="magnify icon" />
               </a>
@@ -67,7 +67,7 @@ header.header {
     align-items: center;
     justify-content: flex-end;
     ul {
-      margin-top: 15px;
+      margin-top: 4px;
       li {
         display: inline-block;
         a {

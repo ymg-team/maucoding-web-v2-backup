@@ -1,17 +1,21 @@
 <template>
-  <div class="large-post-card">
-    <div
-      class="large-post-card__cover"
-      :style="{ backgroundImage: `url(${data.cover})` }"
-    ></div>
-    <h2>{{ data.title }}</h2>
-    <p>{{ data.intro }}</p>
-    <div class="author">
-      <a href="/">Yussan</a>
-      <br />
-      <span class="author__created-on">5 Agustus 2020</span>
+  <nuxt-link
+    to="/post/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
+  >
+    <div class="large-post-card">
+      <div
+        class="large-post-card__cover"
+        :style="{ backgroundImage: `url(${data.cover})` }"
+      ></div>
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.intro }}</p>
+      <div class="author">
+        <a href="/">Yussan</a>
+        <br />
+        <span class="author__created-on">5 Agustus 2020</span>
+      </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -38,6 +42,9 @@ export default {
 
 <style lang="scss">
 @import '../../styles/variables/colors.scss';
+a {
+  text-decoration: none !important;
+}
 
 .large-post-card {
   padding: 30px;
@@ -48,6 +55,7 @@ export default {
     background-position: center;
     height: 139px;
     width: 100%;
+    border-radius: 10px;
   }
   h2 {
     font-size: 18px;

@@ -30,7 +30,7 @@
 
   .small-video-card__cover {
     display: block;
-    height: 235px;
+    height: 170px;
     background-size: cover;
     background-position: center;
     display: flex;

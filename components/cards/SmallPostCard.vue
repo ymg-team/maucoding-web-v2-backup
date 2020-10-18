@@ -1,18 +1,22 @@
 <template>
-  <div class="small-post-card">
-    <div
-      class="small-post-card__cover"
-      :style="{ backgroundImage: `url(${data.cover})` }"
-    ></div>
-    <div class="small-post-card__right">
-      <h2>{{ data.title }}</h2>
-      <div class="author">
-        <a href="/">Yussan</a>
-        <br />
-        <span class="author__created-on">5 Agustus 2020</span>
+  <nuxt-link
+    to="/post/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
+  >
+    <div class="small-post-card">
+      <div
+        class="small-post-card__cover"
+        :style="{ backgroundImage: `url(${data.cover})` }"
+      ></div>
+      <div class="small-post-card__right">
+        <h2>{{ data.title }}</h2>
+        <div class="author">
+          <a href="/">Yussan</a>
+          <br />
+          <span class="author__created-on">5 Agustus 2020</span>
+        </div>
       </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>

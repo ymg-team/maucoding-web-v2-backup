@@ -34,8 +34,8 @@
     border-radius: 10px;
   }
   img.large-video-card__play {
-    width: 132.5px;
-    height: 132.5px;
+    width: 108px;
+    height: 108px;
   }
 }
 </style>

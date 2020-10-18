@@ -41,8 +41,8 @@ export default {
     font-size: 14px;
     line-height: 19px;
     text-decoration-line: underline;
-    color: #000000;
     margin-right: 25px;
+    text-decoration: underline !important;
   }
 }
 </style>

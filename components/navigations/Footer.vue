@@ -140,17 +140,17 @@ export default {
     text-align: center;
   }
   .footer__links {
-    padding-top: 145px;
+    padding-top: 100px;
     a {
       color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
     ul {
       margin: 0;
       list-style: none;
       li {
-        margin-bottom: 24px;
+        margin-bottom: 30px;
       }
       li:last-child {
         margin-bottom: 0;
