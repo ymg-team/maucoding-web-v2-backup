@@ -1,7 +1,7 @@
 <template>
   <div>
+    <Header />
     <div class="container">
-      <Header />
       <Spacer :height="58" />
       <PopularPosts />
       <Spacer :height="50" />
@@ -11,13 +11,11 @@
       <Spacer :height="35" />
       <LatestPosts />
       <Spacer :height="102.61" />
-      <TitleHeader title="Latest Videos" />
-      <Spacer :height="30" />
       <div class="grid">
-        <div class="col-9">
+        <div class="col-8">
           <LatestVideos />
         </div>
-        <div data-push-left="off-1" class="col-2">
+        <div class="col-4">
           <PopularHashtags />
         </div>
       </div>

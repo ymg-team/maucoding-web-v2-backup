@@ -23,7 +23,11 @@
 @import '../../styles/variables/colors.scss';
 
 .small-video-card {
-  margin-bottom: 82px;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: $purple-soft-color;
+  border-radius: 10px;
+
   .small-video-card__cover {
     display: block;
     height: 235px;
@@ -32,20 +36,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+
     img.small-video-card__play {
       width: 100px;
       height: 100px;
     }
   }
   .small-video-card__text {
-    padding: 25px;
-    background-color: $purple-soft-color;
     h2 {
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
       line-height: 103.41%;
-      margin-top: 0;
+      margin-top: 40px;
+      margin-bottom: 30px;
     }
     .small-video-card__text__meta {
       font-style: normal;

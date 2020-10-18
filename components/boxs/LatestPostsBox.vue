@@ -43,14 +43,13 @@ export default {
     padding: 10px;
   }
   .large-post-card {
-    padding: 14px;
     transition: all 0.3s ease;
-    background-color: $purple-soft-color;
     &:hover {
       cursor: pointer;
       box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.25);
     }
     .large-post-card__cover {
+      border-radius: 10px;
       height: 240px;
     }
     h2 {
@@ -69,7 +68,7 @@ export default {
   .glide__bullets {
     text-align: center;
     .glide__bullet {
-      background: #cbcbcb;
+      background: $purple-soft-color;
       border-radius: 10px;
       transform: matrix(1, 0, 0, -1, 0, 0);
       border: none;
@@ -79,7 +78,7 @@ export default {
       outline: none;
       cursor: pointer;
       &.glide__bullet--active {
-        background: #7e7e7e;
+        background: $purple-main-color;
         width: 40px;
       }
     }

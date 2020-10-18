@@ -37,7 +37,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../styles/variables/colors.scss';
+
 .large-post-card {
+  padding: 30px;
+  background-color: $purple-soft-color;
+  border-radius: 10px;
   .large-post-card__cover {
     background-size: cover;
     background-position: center;
@@ -49,6 +54,7 @@ export default {
     font-style: normal;
     font-weight: bold;
     line-height: 25px;
+    margin-top: 50px;
     margin-bottom: 10px;
   }
   p {

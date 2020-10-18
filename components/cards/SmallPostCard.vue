@@ -38,16 +38,22 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../styles/variables/colors.scss';
+
 .small-post-card {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  padding: 20px;
+  background-color: $purple-soft-color;
+  border-radius: 10px;
   .small-post-card__cover {
     width: 115px;
     height: 97px;
     background-size: cover;
     background-position: center;
     flex: none;
+    border-radius: 10px;
   }
   .small-post-card__right {
     margin: 0 0 0 15px;

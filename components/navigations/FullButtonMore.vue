@@ -9,7 +9,7 @@
 
 .btn-more-full {
   text-align: right;
-  border-bottom: 1px solid $purple-main-color;
+  border-bottom: 1px solid $purple-soft-color;
   padding-bottom: 30px;
   width: 1021px;
   margin: 0 auto;
