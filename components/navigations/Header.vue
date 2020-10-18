@@ -1,12 +1,16 @@
 <template>
   <header class="header">
     <div class="grid-noGutter">
-      <div class="col-3 header__header-logo">
+      <div class="col-4 header__header-logo">
         <nuxt-link to="/">
-          <img src="/images/logos/MCDG logo.svg" alt="Mau Coding Logo" />
+          <img src="/images/logos/mcdg-logo-qulub.png" alt="Mau Coding Logo" />
+          <span class="header__header-tagline">
+            Mau Coding <br />
+            Tech from Engineer's Perspective
+          </span>
         </nuxt-link>
       </div>
-      <div class="col-9 header__header-links">
+      <div class="col-8 header__header-links">
         <ul>
           <li>
             <nuxt-link to="/posts" class="active">POSTS</nuxt-link>
@@ -32,9 +36,21 @@
 header.header {
   padding-top: 25px;
   .header__header-logo {
-    img {
-      height: 77px;
-      width: 77px;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      img {
+        height: 56px;
+        width: 64px;
+        margin-right: 20px;
+      }
+      .header__header-tagline {
+        color: #a537fd;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: bold;
+      }
     }
   }
   .header__header-links {
@@ -42,6 +58,7 @@ header.header {
     align-items: center;
     justify-content: flex-end;
     ul {
+      margin-top: 15px;
       li {
         display: inline-block;
         a {
