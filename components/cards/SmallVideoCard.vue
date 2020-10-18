@@ -20,6 +20,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import '../../styles/variables/colors.scss';
+
 .small-video-card {
   margin-bottom: 82px;
   .small-video-card__cover {
@@ -37,11 +39,13 @@
   }
   .small-video-card__text {
     padding: 25px;
+    background-color: $purple-soft-color;
     h2 {
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
       line-height: 103.41%;
+      margin-top: 0;
     }
     .small-video-card__text__meta {
       font-style: normal;

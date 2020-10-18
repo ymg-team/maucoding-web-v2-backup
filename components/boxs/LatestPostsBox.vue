@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../styles/variables/colors.scss';
+
 .latest-post-box {
   display: block;
   [class*='col-'],
@@ -39,9 +41,9 @@ export default {
   .large-post-card {
     padding: 14px;
     transition: all 0.3s ease;
+    background-color: $purple-soft-color;
     &:hover {
       cursor: pointer;
-      background: #ffffff;
       box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.25);
     }
     .large-post-card__cover {
