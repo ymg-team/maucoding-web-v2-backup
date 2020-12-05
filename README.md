@@ -1,5 +1,8 @@
 # Mau Coding
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)
+
 ![Mau Coding Preview](https://i.ibb.co/HXg5DH4/Screen-Shot-2020-11-07-at-11-02-54.png)
 
 ## Host

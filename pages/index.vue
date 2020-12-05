@@ -56,9 +56,9 @@ export default {
       return this.$store.state
     },
   },
-  mounted() {
-    console.log('posts', this.$store.state)
-  },
+  // mounted() {
+  //   console.log('posts', this.$store.state)
+  // },
   head() {
     return {
       title: "Mau Coding - Tech From Engineer's Perspective",
