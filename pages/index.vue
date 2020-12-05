@@ -1,25 +1,21 @@
 <template>
   <div>
+    <Header />
     <div class="container">
-      <Header />
-      <Spacer height="58" />
+      <Spacer :height="58" />
       <PopularPosts />
-      <Spacer height="50" />
+      <Spacer :height="50" />
       <BtnMoreFull />
-      <Spacer height="50" />
+      <Spacer :height="50" />
       <TitleHeader title="Latest Posts" />
-      <Spacer height="35" />
+      <Spacer :height="35" />
       <LatestPosts />
-      <Spacer height="50" />
-      ...
-      <Spacer height="102.61" />
-      <TitleHeader title="Latest Videos" />
-      <Spacer height="30" />
+      <Spacer :height="102.61" />
       <div class="grid">
-        <div class="col-9">
+        <div class="col-8">
           <LatestVideos />
         </div>
-        <div data-push-left="off-1" class="col-2">
+        <div class="col-4">
           <PopularHashtags />
         </div>
       </div>
@@ -51,14 +47,15 @@ export default {
     PopularHashtags,
     Footer,
   },
+  data() {
+    return {}
+  },
   computed: {
     posts() {
       return this.$store.state
     },
   },
-  // mounted() {
-  //   console.log('posts', this.$store.state)
-  // },
+
   head() {
     return {
       title: "Mau Coding - Tech From Engineer's Perspective",
