@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     to="/post/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
   >
     <div class="large-post-card">
@@ -15,7 +15,7 @@
         <span class="author__created-on">5 Agustus 2020</span>
       </div>
     </div>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script>

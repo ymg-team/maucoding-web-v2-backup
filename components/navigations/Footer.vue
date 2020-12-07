@@ -115,7 +115,7 @@ export default {
   .footer__socmeds {
     width: calc(233px - 22px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 11px 26.93px 11px;
   }
   .footer__copyright {
@@ -140,7 +140,7 @@ export default {
     text-align: center;
   }
   .footer__links {
-    padding-top: 100px;
+    padding-top: 60px;
     a {
       color: #ffffff;
       text-decoration: none;

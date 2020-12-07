@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     to="/post/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
   >
     <div class="small-post-card">
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script>

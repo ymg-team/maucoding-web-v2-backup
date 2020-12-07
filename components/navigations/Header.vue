@@ -3,7 +3,7 @@
     <div class="container">
       <div class="grid-noGutter">
         <div class="col-4 header__header-logo">
-          <nuxt-link to="/">
+          <NuxtLink to="/">
             <img
               src="/images/logos/mcdg-logo-qulub.png"
               alt="Mau Coding Logo"
@@ -12,18 +12,18 @@
               Mau Coding <br />
               Tech from Engineer's Perspective
             </span>
-          </nuxt-link>
+          </NuxtLink>
         </div>
         <div class="col-8 header__header-links">
           <ul>
             <li>
-              <nuxt-link to="/posts" class="active">POSTS</nuxt-link>
+              <NuxtLink to="/posts" class="active">POSTS</NuxtLink>
             </li>
             <li>
-              <nuxt-link to="/videos">VIDEOS</nuxt-link>
+              <NuxtLink to="/videos">VIDEOS</NuxtLink>
             </li>
             <li>
-              <nuxt-link to="/about">ABOUT</nuxt-link>
+              <NuxtLink to="/about">ABOUT</NuxtLink>
             </li>
             <li style="width: 70px;" class="header__header-links__search-icon">
               <a href="#">

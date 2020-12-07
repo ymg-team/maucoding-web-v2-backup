@@ -3,14 +3,16 @@
     <Header />
     <div class="container">
       <Spacer :height="58" />
+      <TitleHeader title="Popular Posts" />
+      <Spacer :height="35" />
       <PopularPosts />
       <Spacer :height="50" />
       <BtnMoreFull />
       <Spacer :height="50" />
       <TitleHeader title="Latest Posts" />
-      <Spacer :height="35" />
+      <Spacer :height="20" />
       <LatestPosts />
-      <Spacer :height="102.61" />
+      <Spacer :height="100" />
       <div class="grid">
         <div class="col-8">
           <LatestVideos />

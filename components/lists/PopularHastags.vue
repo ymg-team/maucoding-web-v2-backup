@@ -2,17 +2,32 @@
   <div class="popular-hashtags">
     <h2 class="popular-hashtags__title">Popular Hashtags</h2>
     <div class="popular-hashtags__links">
-      <a href="/">Hastags 1</a>
-      <a href="/">Hastags 2</a>
-      <a href="/">Hastags 3</a>
-      <a href="/">Long Hastags</a>
+      <nuxt-link v-for="(n, key) in DummyTags" :key="key" :to="`/tags/${n}`">{{
+        n
+      }}</nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
+const DummyTags = [
+  'javascript',
+  'go',
+  'react',
+  'vue',
+  'nextjs',
+  'mongodb',
+  'aws',
+  'firebase',
+]
+
 export default {
   name: 'PopularHashtags',
+  data: () => {
+    return {
+      DummyTags,
+    }
+  },
 }
 </script>
 
