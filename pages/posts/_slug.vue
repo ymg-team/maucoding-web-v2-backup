@@ -1,21 +1,20 @@
 <template>
-  <div class="container">
-    this is posts page: {{ this.slug }}
-    <NuxtLink to="/">Back to home</NuxtLink>
+  <div>
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from '@/components/navigations/Header.vue'
+
 export default {
+  components: {
+    Header,
+  },
   asyncData({ params }) {
     const { slug } = params // When calling /abc the slug will be "abc"
     return { slug }
   },
-  // data() {
-  //   return {
-  //     s: slug,
-  //   }
-  // },
   head() {
     return {
       title: 'Posts - Mau Coding',

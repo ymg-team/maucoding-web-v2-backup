@@ -16,14 +16,13 @@
         </div>
         <div class="col-8 header__header-links">
           <ul>
-            <li>
-              <NuxtLink to="/posts" class="active">POSTS</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/videos">VIDEOS</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/about">ABOUT</NuxtLink>
+            <li v-for="n in Menus" :key="n.link">
+              <NuxtLink
+                :to="n.to"
+                :class="`${pathArr[1] == n.key ? 'active' : ''}`"
+              >
+                {{ n.text }}
+              </NuxtLink>
             </li>
             <li style="width: 70px;" class="header__header-links__search-icon">
               <a href="#">
@@ -95,3 +94,34 @@ header.header {
   }
 }
 </style>
+
+<script>
+const Menus = [
+  {
+    to: '/posts',
+    text: 'Posts',
+    key: 'posts',
+  },
+  {
+    to: '/videos',
+    text: 'Videos',
+    key: 'videos',
+  },
+  {
+    to: '/about',
+    text: 'About',
+    key: 'about',
+  },
+]
+
+export default {
+  name: 'Header',
+  data() {
+    const pathArr = this.$nuxt.$route.path.split('/')
+    return {
+      Menus,
+      pathArr,
+    }
+  },
+}
+</script>

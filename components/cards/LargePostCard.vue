@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    to="/post/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
+    to="/posts/Membuat-Dashboard-Dengan-Python-Dash-5e0067ca6857eb1948ae82bb"
   >
     <div class="large-post-card">
       <div
