@@ -8,7 +8,7 @@
         :style="{ backgroundImage: `url(${data.cover})` }"
       ></div>
       <h2>{{ data.title }}</h2>
-      <p>{{ data.intro }}</p>
+      <p v-if="!hideSummary">{{ data.intro }}</p>
       <div class="author">
         <a href="/">Yussan</a>
         <br />
@@ -35,6 +35,10 @@ export default {
           created_on: 1600572991,
         }
       },
+    },
+    hideSummary: {
+      type: Boolean,
+      default: false,
     },
   },
 }
