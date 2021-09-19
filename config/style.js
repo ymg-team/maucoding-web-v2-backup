@@ -1,5 +1,5 @@
 export const Colors = {
   mainWhite: '#ffffff',
 
-  mainPurple; '#a537fd',
+  mainPurple: '#a537fd',
 }

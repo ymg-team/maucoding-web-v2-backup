@@ -87,10 +87,10 @@ const MENU_CONTACTS = [
     icon: '/images/icons/email-outline.png',
     text: 'info@maucoding.com',
   },
-  {
-    icon: '/images/icons/phone.png',
-    text: 'Whatsapp: +62 851-5693-4428',
-  },
+  // {
+  //   icon: '/images/icons/phone.png',
+  //   text: 'Whatsapp: +62 851-5693-4428',
+  // },
 ]
 
 export default {
@@ -128,7 +128,7 @@ export default {
     background-color: #ffffff;
     height: 4.09px;
     width: 873px;
-    margin: 41.65px auto auto auto;
+    margin: 60px auto auto auto;
   }
   .footer__powered-by {
     padding: 24.56px;
@@ -167,6 +167,7 @@ export default {
           }
           .text {
             padding-left: 40px;
+            line-height: 1.8;
           }
         }
       }
